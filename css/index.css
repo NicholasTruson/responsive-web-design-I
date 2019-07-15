@@ -1,3 +1,241 @@
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+	width: 90%;
+    margin: 0 auto;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+
+header{
+	display: flex;
+	/* width: 100%; */
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+
+header nav {
+	box-sizing: border-box;
+	width: 80%;
+
+}
+nav ul{
+	display: flex;
+	justify-content: space-between;
+}
+
+ul {
+	display: flex;
+}
+
+nav li{
+    box-sizing: border-box;
+    justify-content: center;
+	padding: 20px 20px 20px 0px;
+    color: #A9A9A9;
+
+} 
+
+header .logo {
+	width: 20%;
+	width: 200px;
+	height: 60px;
+	padding: 10px;
+	vertical-align: baseline;
+
+}
+
+.service{
+    padding: 10px 10px 10px 0px;
+    border-bottom: 2px solid black;
+}
+
+.service-img img{
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.service-text {
+    padding-bottom: 20px;
+}
+
+.service-text h1{
+    font-size: 1.5em;
+}
+.main-content{
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 0px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid black;
+}
+
+.main-content .top-box{
+    width: 350px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: white;
+    padding-bottom: 20px;
+}
+
+    .main-content .top-box > input{
+        margin-top: 15px;
+        border-radius: 5px;
+        border: 1px solid black;
+        background-color: white;
+        width: 120px;
+        height: 30px;
+    }
+
+.main-content .mid-box{
+    width: 350px;
+    padding: 10px;
+    margin-top: 30px;
+    border-left: 1px solid black;
+	border-right: 1px solid black;    
+	border-top: 1px solid black;  
+	border-bottom:1px solid black;  
+    background-color: white;
+}
+
+    .main-content .mid-box > input{
+        margin-top: 15px;
+        border-radius: 5px;
+        border: 1px solid black;
+        background-color: white;
+        width: 120px;
+        height: 30px;
+    }
+
+
+.main-content .bottom-box{
+    width: 350px;
+    padding: 10px;
+    margin-top: 30px;
+    border: 1px solid black;
+    background-color: white;
+
+}
+
+    .main-content .bottom-box > input{
+        margin-top: 15px;
+        border-radius: 5px;
+        border: 1px solid black;
+        background-color: white;
+        width: 120px;
+        height: 30px;
+    }
+
+
+.bottom {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}    
+
+    .bottom .bottom-left{
+        width: 350px;
+    }
+
+    .bottom-left p{
+        padding-bottom: 20px;
+    }
+
+    .bottom-left ul{
+        padding-left: 20px;
+    }
+
+    .bottom-left li{
+        list-style: square;
+        padding: .3em;
+    }
+
+    .bottom-right img{
+        width: 350px;
+    }   
+
+    footer .copyright{
+        text-align: center;
+        padding: 20px;
+	}
+	
+/* index css
+
+
+
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -63,166 +301,185 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Your code starts here! */
-
-body{
-	width: 70%;
-	margin: 0 auto;
+.container {
+  width: 880px;
+  
+  margin: 0 auto;
 }
 
-header{
-	display: inline-block;
-	width: 100%;
-	box-sizing: border-box;
-	padding: 0px;
-	margin: 0px;
-}
+/* header */
 
 header nav {
-	display: inline-block;
-	box-sizing: border-box;
-	width: 70%;
-
+  display: flex;
+  width: 691px;
+  vertical-align: top;
+  margin-top: 35px;
 }
-header nav li{
-	display: inline-block;
-	padding: 20px;
-	margin-bottom: 20px;
-	color: #A9A9A9;
-} 
+
+header nav a {
+  margin-right: 65px;
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:first-child {
+  margin-left: 0;
+}
+
+header nav a:last-child {
+  margin-right: 0;
+}
 
 header .logo {
-	display: inline-block;
-	width: 200px;
-	height: 60px;
-	padding: 10px;
-	vertical-align: baseline;
-
+  margin-top: 25px;
 }
 
-#intro {
-	display: inline-block;
-	width: 100%;
-	box-sizing: border-box;
-	padding: 0px;
-	font-family: 'Bangers', cursive;
-	text-transform: uppercase;
+/* cta */
+
+.cta .cta-text {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 77px;
+  margin-top: 120px;
+  text-align: center;
+  padding: 0px 75px;
 }
 
-#intro .left-intro {
-	font-size: 60px;
-	display: inline-block;
-	text-align: center;
-	margin: 0 auto;
-	width: 60%;
+.cta .cta-text button {
+  background: white;
+  vertical-align: top;
+  margin-top: 6px;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
 }
 
-#intro .right-intro{
-	display: inline-block;
-	width: 35%;
-	padding: 0px;
-	margin-top: 15px;
-
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
 }
 
-#intro .right-intro img{
-	width: 300px;
+.cta img {
+  display: inline-block;
+  margin-top: 69px;
 }
 
-input[type="button" i] {
-	padding: 1px 7px 2px;
-	border: 1px solid black;
-	width: 180px;
-	height: 35px;
-	font-size: 20px;
-	background-color: white;
+.main-content {
+  border-top: 1px solid black;
+  margin-top: 76px;
+  padding-top: 39px;
 }
 
-hr{
-	margin-top: 60px;
+.main-content .top-content {
+  padding: 0 10px;
 }
 
-.main-content{
-	display: inline-block
-	width: 100%;
-	padding-top: 20px;
-
-
+.main-content .top-content .text-content {
+  width: 410px;
+  display: inline-block;
+  margin-right: 34px;
 }
 
-.main-content p{
-	color: #696969;
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
 }
 
-.top{
-	display: inline-block;
-	font-size: 1.2em;
+.main-content .middle-img {
+  margin-top: 45px;
 }
 
-.top-left{
-	width: 48%;
-	display: inline-block;
-	box-sizing: border-box;
-	margin-right: 20px;
+.main-content .bottom-content {
+  margin-top: 37px;
+  padding: 0 10px;
 }
 
-.top-right{
-	width: 45%;
-	display: inline-block;
-	box-sizing: border-box;
-	margin-left: 20px;
+.main-content .bottom-content .text-content {
+  width: 275px;
+  display: inline-block;
+  margin-right: 12px;
 }
 
-.full{
-	margin: 30px 0px 30px 0px;
-
+.main-content .bottom-content .text-content:last-child {
+  margin-right: 0;
 }
 
-.full img{
-	width:100%;
+.contact {
+  margin-top: 57px;
+  border-top: 1px solid black;
+  padding: 39px 10px 0;
 }
 
-.bottom-left{
-	width: 30%;
-	display: inline-block;
-	box-sizing: border-box;
-	margin-right: 20px;
-	font-size: 1.1em;
+.contact p {
+  margin: 20px 0;
 }
 
-.bottom-middle{
-	width: 30%;
-	display: inline-block;
-	box-sizing: border-box;
-	margin-left: 20px;
-	font-size: 1.1em;
+footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
 }
-
-.bottom-right{
-	width: 30%;
-	display: inline-block;
-	box-sizing: border-box;
-	margin-left: 20px;
-	font-size: 1.1em;
-}
-
-footer{
-	padding-top: 20px;
-}
-
-footer .address{
-	color: #696969;
-}
-
-footer .copyright{
-	text-align: center;
-	padding: 20px;
-} 
 
 @media screen and (max-width:800px){
-
+    
 }
 
 @media screen and (max-width:500px){
-    
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .container .logo{
+        display: center;
+        align-content: center;
+    }
+    .container header nav a{
+        align-content: center;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        margin: auto 0;
+    }
+    header nav{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .middle-img{
+        width: 500px;
+        align-content: center;
+    }
+    header nav a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid black;
+    }
+    .cta{
+        display: flex;
+        justify-content: center;
+    }
+    .cta .top-image{
+        display: none;
+    }
+    .main-content .top-content .text-content{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 500px;
+    }
+
 }
